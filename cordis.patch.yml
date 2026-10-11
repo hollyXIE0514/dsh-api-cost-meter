@@ -1,0 +1,7 @@
+# dsh-api-cost-meter 插件补丁：向 profile 根插入本插件的一行。
+# 后续用户可在 profile 的 cordis.patch.yml 里按 id 覆盖 config（例如汇率）。
+- insert:
+    - id: api-cost-meter
+      name: 'dsh-api-cost-meter'
+      config:
+        exchangeRate: 7.2
